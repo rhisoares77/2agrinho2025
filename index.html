@@ -14,7 +14,10 @@
                 <h1>Sabor da Terra</h1>
             </div>
             <nav>
-                <ul>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">
+                    Menu
+                </button>
+                <ul id="menu-principal">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#cardapio">Cardápio</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
@@ -24,59 +27,61 @@
         </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <h2>Desfrute do melhor da culinária local com ingredientes frescos da nossa terra.</h2>
-            <p>Do campo para a sua mesa, uma experiência gastronômica única e sustentável.</p>
-            <a href="#cardapio" class="button">Ver Cardápio</a>
-        </div>
-    </section>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Desfrute do melhor da culinária local com ingredientes frescos da nossa terra.</h2>
+                <p>Do campo para a sua mesa, uma experiência gastronômica única e sustentável.</p>
+                <a href="#cardapio" class="button">Ver Cardápio</a>
+            </div>
+        </section>
 
-    <section id="cardapio" class="menu-section">
-        <div class="container">
-            <h2>Nosso Cardápio</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="img/prato1.jpg" alt="Prato 1">
-                    <h3>Prato Delicioso 1</h3>
-                    <p class="descricao">Ingredientes frescos e selecionados, cultivados localmente.</p>
-                    <p class="preco">R$ 25,00</p>
+        <section id="cardapio" class="menu-section">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <img src="img/prato1.jpg" alt="Prato Delicioso 1">
+                        <h3>Prato Delicioso 1</h3>
+                        <p class="descricao">Ingredientes frescos e selecionados, cultivados localmente.</p>
+                        <p class="preco">R$ 25,00</p>
+                    </article>
+                    <article class="menu-item">
+                        <img src="img/prato2.jpg" alt="Prato Especial 2">
+                        <h3>Prato Especial 2</h3>
+                        <p class="descricao">Uma combinação única de sabores da nossa região.</p>
+                        <p class="preco">R$ 32,00</p>
+                    </article>
+                    <article class="menu-item">
+                        <img src="img/prato3.jpg" alt="Opção Vegana 3">
+                        <h3>Opção Vegana 3</h3>
+                        <p class="descricao">Sabor e saúde em um prato vegano nutritivo.</p>
+                        <p class="preco">R$ 28,00</p>
+                    </article>
                 </div>
-                <div class="menu-item">
-                    <img src="img/prato2.jpg" alt="Prato 2">
-                    <h3>Prato Especial 2</h3>
-                    <p class="descricao">Uma combinação única de sabores da nossa região.</p>
-                    <p class="preco">R$ 32,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="img/prato3.jpg" alt="Prato 3">
-                    <h3>Opção Vegana 3</h3>
-                    <p class="descricao">Sabor e saúde em um prato vegano nutritivo.</p>
-                    <p class="preco">R$ 28,00</p>
-                </div>
-                </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="sobre" class="about-section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>O Restaurante Sabor da Terra nasceu com a paixão de valorizar os produtos da nossa região e oferecer uma experiência gastronômica autêntica e sustentável. Trabalhamos em parceria com produtores locais, garantindo ingredientes frescos e de alta qualidade, cultivados com respeito ao meio ambiente.</p>
-            <p>Nossa cozinha celebra os sabores da terra, com pratos que resgatam a tradição e inovam com criatividade. Venha conhecer o verdadeiro sabor da nossa terra!</p>
-        </div>
-    </section>
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>O Restaurante Sabor da Terra nasceu com a paixão de valorizar os produtos da nossa região e oferecer uma experiência gastronômica autêntica e sustentável. Trabalhamos em parceria com produtores locais, garantindo ingredientes frescos e de alta qualidade, cultivados com respeito ao meio ambiente.</p>
+                <p>Nossa cozinha celebra os sabores da terra, com pratos que resgatam a tradição e inovam com criatividade. Venha conhecer o verdadeiro sabor da nossa terra!</p>
+            </div>
+        </section>
 
-    <section id="contato" class="contact-section">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Estamos ansiosos para receber sua visita!</p>
-            <address>
-                Rua Exemplo, 123 - Centro, Curitiba - PR
-            </address>
-            <p>Telefone: (41) 99999-9999</p>
-            <p>Email: contato@saborterra.com.br</p>
-        </div>
-    </section>
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Estamos ansiosos para receber sua visita!</p>
+                <address>
+                    Rua Exemplo, 123 - Centro, Curitiba - PR
+                </address>
+                <p>Telefone: (41) 99999-9999</p>
+                <p>Email: contato@saborterra.com.br</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
