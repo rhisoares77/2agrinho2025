@@ -1,237 +1,90 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Sabor da Terra - Uma Experiência Agrinho</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo Sabor da Terra">
-                <h1>Sabor da Terra</h1>
-            </div>
-            <nav>
-                <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">
-                    <i class="fas fa-bars"></i> Menu
-                </button>
-                <ul id="menu-principal">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#cardapio">Cardápio</a></li>
-                    <li><a href="#historia">Nossa História</a></li>
-                    <li><a href="#chef">Nosso Chef</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#reservas">Reservas</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="container">
-                <h1>Uma Celebração dos Sabores da Nossa Terra</h1>
-                <p>Descubra pratos autênticos, preparados com ingredientes frescos e locais, em um ambiente acolhedor.</p>
-                <a href="#cardapio" class="button primary">Ver Cardápio</a>
-                <a href="#reservas" class="button secondary">Faça sua Reserva</a>
-            </div>
-        </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        <section id="cardapio" class="menu-section">
-            <div class="container">
-                <h2>Nosso Cardápio</h2>
-                <p class="section-description">Explore uma variedade de pratos que destacam a riqueza dos ingredientes da nossa região.</p>
-                <div class="menu-categories">
-                    <button class="category-button active" data-category="todos">Todos</button>
-                    <button class="category-button" data-category="entradas">Entradas</button>
-                    <button class="category-button" data-category="principais">Pratos Principais</button>
-                    <button class="category-button" data-category="sobremesas">Sobremesas</button>
-                    <button class="category-button" data-category="bebidas">Bebidas</button>
-                </div>
-                <div class="menu-grid">
-                    <article class="menu-item" data-category="entradas">
-                        <img src="img/prato1.jpg" alt="Bruschetta de Tomate Fresco">
-                        <h3>Bruschetta de Tomate Fresco</h3>
-                        <p class="descricao">Pão italiano artesanal com tomates frescos marinados em azeite e manjericão.</p>
-                        <p class="preco">R$ 18,00</p>
-                    </article>
-                    <article class="menu-item" data-category="principais">
-                        <img src="img/prato2.jpg" alt="Risoto de Cogumelos Selvagens">
-                        <h3>Risoto de Cogumelos Selvagens</h3>
-                        <p class="descricao">Arroz arbóreo cremoso com cogumelos porcini, paris e shiitake, finalizado com parmesão.</p>
-                        <p class="preco">R$ 35,00</p>
-                    </article>
-                    <article class="menu-item" data-category="sobremesas">
-                        <img src="img/prato3.jpg" alt="Torta de Maçã com Canela">
-                        <h3>Torta de Maçã com Canela</h3>
-                        <p class="descricao">Massa folhada crocante recheada com maçãs frescas e um toque de canela, servida com sorvete de creme.</p>
-                        <p class="preco">R$ 22,00</p>
-                    </article>
-                    <article class="menu-item" data-category="bebidas">
-                        <h3>Suco de Laranja Natural</h3>
-                        <p class="preco">R$ 8,00</p>
-                    </article>
-                    <article class="menu-item" data-category="entradas">
-                        <h3>Salada Caprese</h3>
-                        <p class="descricao">Mussarela de búfala, tomate cereja e manjericão fresco com azeite balsâmico.</p>
-                        <p class="preco">R$ 20,00</p>
-                    </article>
-                    <article class="menu-item" data-category="principais">
-                        <h3>Filé de Salmão com Molho de Maracujá</h3>
-                        <p class="descricao">Filé de salmão grelhado servido com um delicioso molho agridoce de maracujá e purê de batata doce.</p>
-                        <p class="preco">R$ 42,00</p>
-                    </article>
-                    <article class="menu-item" data-category="sobremesas">
-                        <h3>Mousse de Chocolate Amargo</h3>
-                        <p class="descricao">Mousse leve e aerada feita com chocolate amargo de alta qualidade.</p>
-                        <p class="preco">R$ 25,00</p>
-                    </article>
-                    <article class="menu-item" data-category="bebidas">
-                        <h3>Água Mineral (com/sem gás)</h3>
-                        <p class="preco">R$ 5,00</p>
-                    </article>
-                    </div>
-            </div>
-        </section>
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
 
-        <section id="historia" class="story-section">
-            <div class="container">
-                <h2>Nossa História</h2>
-                <div class="story-content">
-                    <div class="story-image">
-                        <img src="img/ambiente1.jpg" alt="Ambiente do Restaurante">
-                    </div>
-                    <div class="story-text">
-                        <p>Fundado em [Ano de Fundação], o Restaurante Sabor da Terra nasceu do sonho de trazer à mesa o frescor e a autenticidade dos ingredientes cultivados em nossa região. Nossa jornada começou com a paixão pela agricultura familiar e a vontade de compartilhar os sabores únicos que a terra nos oferece.</p>
-                        <p>Ao longo dos anos, construímos laços fortes com produtores locais, garantindo que cada prato seja preparado com ingredientes da mais alta qualidade, colhidos no ponto ideal de maturação. Acreditamos na sustentabilidade e no respeito ao ciclo natural dos alimentos, valores que se refletem em cada detalhe da nossa cozinha.</p>
-                        <p>Nosso ambiente foi cuidadosamente pensado para proporcionar uma experiência acolhedora e relaxante, onde você pode desfrutar de uma refeição memorável em companhia de amigos e familiares.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        <section id="chef" class="chef-section">
-            <div class="container">
-                <h2>Nosso Chef</h2>
-                <div class="chef-details">
-                    <div class="chef-image">
-                        <img src="img/chef.jpg" alt="Foto do Chef">
-                    </div>
-                    <div class="chef-bio">
-                        <h3>[Nome do Chef]</h3>
-                        <p class="chef-title">Chef de Cozinha</p>
-                        <p>[Nome do Chef] traz para o Sabor da Terra uma rica experiência culinária, adquirida em renomados restaurantes e através de uma profunda conexão com os ingredientes locais. Sua filosofia de cozinha valoriza a simplicidade e a pureza dos sabores, com técnicas que realçam o melhor de cada ingrediente.</p>
-                        <p>Com uma paixão pela inovação e um profundo respeito pela tradição, [Nome do Chef] cria pratos que são verdadeiras obras de arte, combinando criatividade e técnica para proporcionar uma experiência gastronômica inesquecível aos nossos clientes.</p>
-                        <p>“[Citação inspiradora do Chef sobre a culinária local]” - [Nome do Chef]</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+header h1 a {
+    text-decoration: none;
+    color: #5cb85c;
+}
 
-        <section id="galeria" class="gallery-section">
-            <div class="container">
-                <h2>Galeria de Fotos</h2>
-                <p class="section-description">Explore um pouco do nosso ambiente e dos nossos deliciosos pratos.</p>
-                <div class="gallery-grid">
-                    <img src="img/ambiente1.jpg" alt="Foto do Ambiente 1">
-                    <img src="img/prato2.jpg" alt="Foto do Prato 2">
-                    <img src="img/ambiente2.jpg" alt="Foto do Ambiente 2">
-                    <img src="img/prato1.jpg" alt="Foto do Prato 1">
-                    <img src="img/prato3.jpg" alt="Foto do Prato 3">
-                    <img src="img/chef.jpg" alt="Foto do Chef">
-                    </div>
-            </div>
-        </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-        <section id="reservas" class="reservations-section">
-            <div class="container">
-                <h2>Faça sua Reserva</h2>
-                <p class="section-description">Reserve sua mesa e venha desfrutar de uma experiência gastronômica única.</p>
-                <form class="reservations-form">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone">
-                    </div>
-                    <div class="form-group">
-                        <label for="data">Data:</label>
-                        <input type="date" id="data" name="data" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="hora">Hora:</label>
-                        <input type="time" id="hora" name="hora" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="pessoas">Número de Pessoas:</label>
-                        <select id="pessoas" name="pessoas">
-                            <option value="1">1 Pessoa</option>
-                            <option value="2">2 Pessoas</option>
-                            <option value="3">3 Pessoas</option>
-                            <option value="4">4 Pessoas</option>
-                            <option value="5+">5+ Pessoas</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="button primary">Reservar Agora</button>
-                </form>
-            </div>
-        </section>
+nav ul li {
+    margin-left: 20px;
+}
 
-        <section id="contato" class="contact-section">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <p class="section-description">Estamos à disposição para responder suas dúvidas e sugestões.</p>
-                <div class="contact-details">
-                    <div class="contact-info">
-                        <h3>Informações de Contato</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Curitiba - PR</p>
-                        <p><i class="fas fa-phone"></i> Telefone: (41) 99999-9999</p>
-                        <p><i class="fas fa-envelope"></i> Email: contato@saborterra.com.br</p>
-                    </div>
-                    <div class="contact-form">
-                        <h3>Fale Conosco</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="nome-contato">Nome:</label>
-                                <input type="text" id="nome-contato" name="nome-contato" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email-contato">Email:</label>
-                                <input type="email" id="email-contato" name="email-contato" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensagem-contato">Mensagem:</label>
-                                <textarea id="mensagem-contato" name="mensagem-contato" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="button secondary">Enviar Mensagem</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Restaurante Sabor da Terra - Uma Experiência Agrinho</p>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+nav ul li a:hover {
+    color: #5cb85c;
+}
 
-    <script src="js/script.js"></script>
-</body>
-</html>
+.carrinho {
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-image {
+    max-width: 40%;
+}
+
+.hero-image img {
+    
